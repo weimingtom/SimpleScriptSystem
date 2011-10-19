@@ -37,8 +37,9 @@ II. How to build
 --------------------------
 III. Build Configure
 1) Modify config.h
-	USE_GDI : use Windows GDI
-	USE_SDL : use SDL
+	USE_GDI : use Windows GDI (Windows)
+	USE_SDL : use SDL (Windows / Ubuntu)
+	USE_WGL : use OpenGL (Windows)
 
 --------------------------
 IV. Status

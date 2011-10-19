@@ -1,7 +1,7 @@
 #pragma once
 
 //canvas object
-#if USE_GDI
+#if USE_GDI || USE_WGL
 #include <windows.h>
 extern HDC CanvasInit(HWND hWnd);
 #endif

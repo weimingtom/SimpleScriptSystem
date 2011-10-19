@@ -1,25 +1,24 @@
 #include "config.h"
 
-#if USE_GDI
+#if USE_WGL
 
 #include <windows.h>
 #include <tchar.h>
-#include <stdio.h>
 
 #include "mainframe.h"
-#include "script.h"
+#include "canvas.h"
 #include "mouse.h"
 #include "keyboard.h"
-#include "canvas.h"
+#include "script.h"
 #include "misc.h"
 
+//WS_OVERLAPPEDWINDOW
 #define WINDOW_STYLE WS_OVERLAPPED | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU
-#define TIMER_ELAPSE 1
 
 static HWND s_hAppWnd;
 static HDC s_hCanvas;
 
-static LRESULT CALLBACK WndProc(HWND hWnd, 
+LRESULT CALLBACK WndProc(HWND hWnd, 
 	UINT message, 
 	WPARAM wParam, 
 	LPARAM lParam)
@@ -45,7 +44,6 @@ static LRESULT CALLBACK WndProc(HWND hWnd,
 		s_hCanvas = CanvasInit(hWnd);
 		MouseInit();
 		KeyboardInit();
-		SetTimer(hWnd, 1, TIMER_ELAPSE, 0);
 		break;
 	
 	case WM_DESTROY:
@@ -67,17 +65,6 @@ static LRESULT CALLBACK WndProc(HWND hWnd,
 				ps.rcPaint.left, ps.rcPaint.top, 
 				SRCCOPY);
 			EndPaint(hWnd, &ps);
-		}
-		break;
-
-	case WM_TIMER:
-		{
-			UINT nIDEvent = (UINT)wParam;
-			switch(nIDEvent)
-			{
-			case 1:
-				break;
-			}
 		}
 		break;
 
@@ -138,86 +125,82 @@ static LRESULT CALLBACK WndProc(HWND hWnd,
 	return 0;
 }
 
-static BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
-{
-	HWND hWnd;
-	static RECT rectWindow = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
-	AdjustWindowRect(&rectWindow, WINDOW_STYLE, FALSE);
-    hWnd = CreateWindowA(SSS_CLASS,
-		SSS_TITLE, WINDOW_STYLE, 
-		CW_USEDEFAULT, CW_USEDEFAULT,
-		rectWindow.right - rectWindow.left, 
-		rectWindow.bottom - rectWindow.top, 
-		NULL, NULL, hInstance, NULL);
-	if (!hWnd)
-	{
-		return FALSE;
-	}
-	ShowWindow(hWnd, nCmdShow);
-	UpdateWindow(hWnd);
-	return TRUE;
-}
-
-static ATOM MyRegisterClass(HINSTANCE hInstance)
-{
-	WNDCLASSEXA wcex;
-	wcex.cbSize = sizeof(WNDCLASSEX);
-	wcex.style = CS_HREDRAW | CS_VREDRAW;
-	wcex.lpfnWndProc = WndProc;
-	wcex.cbClsExtra = 0;
-	wcex.cbWndExtra = 0;
-	wcex.hInstance = hInstance;
-	wcex.hIcon = LoadIcon(hInstance, NULL);
-	wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
-	wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
-	wcex.lpszMenuName = NULL;
-	wcex.lpszClassName = SSS_CLASS;
-	wcex.hIconSm = LoadIcon(wcex.hInstance, NULL);
-	return RegisterClassExA(&wcex);
-}
-
-int APIENTRY WinMain(HINSTANCE hInstance,
+int APIENTRY WinMain(HINSTANCE hInstance, 
 	HINSTANCE hPrevInstance, 
-        LPSTR lpCmdLine,
+	LPTSTR lpCmdLine, 
 	int nCmdShow)
 {
-	UNREFERENCED_PARAMETER(hPrevInstance);
-	UNREFERENCED_PARAMETER(lpCmdLine);
-	MyRegisterClass(hInstance);
-	if(!InitInstance(hInstance, nCmdShow))
+    WNDCLASSEX wcex = { 
+		sizeof(WNDCLASSEX), 
+		CS_OWNDC | CS_HREDRAW | CS_VREDRAW, 
+		WndProc, 
+		0, 0, 
+		hInstance, 
+		NULL, NULL, 
+		(HBRUSH)(COLOR_WINDOW + 1), 
+		NULL,
+		SSS_CLASS, 
+		NULL
+	};
+    RECT R = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
+	if(!RegisterClassEx(&wcex))
+    {
+		return 0;
+    }
+	AdjustWindowRect(&R, WINDOW_STYLE, FALSE);
+    if (!(s_hAppWnd = CreateWindow(SSS_CLASS, 
+		SSS_TITLE, 
+		WINDOW_STYLE, 
+		CW_USEDEFAULT,
+		0, R.right - R.left, R.bottom - R.top, 
+		NULL, NULL, hInstance, NULL)))
 	{
-		return FALSE;
-	}
+        return 0;
+    }
+	ShowWindow(s_hAppWnd, nCmdShow);
+	UpdateWindow(s_hAppWnd);
 	/*
-	TODO: Using script engine to dispatch message,
-	or the main window will have no response!!!
-	As follow:
-		while(1)
+	do
+	{
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
 		{
-			if(MainFrameMainLoop())
-				break;
-		}
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+		else 
+		{
+			
+        }
+    } while(msg.message != WM_QUIT);
+	or 
+    while (1)
+	{
+        if (MainFrameGetMsg())
+			break;
+		CanvasLock();
+		CanvasUnlock();
+    }
 	*/
 	ScriptRun();
-	/*
-	FIXME:
-	the return value of program should be : 
-	(int) msg.wParam;
-	*/
-	return 0; 
+	CanvasRelease();
+    return 0;
 }
 
 int MainFrameGetMsg(void) 
 {
 	MSG msg;
-	if(!GetMessage(&msg, 0, 0, 0))
+    if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+	{
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+	else 
+	{
+        return 0;
+    }
+	if (msg.message == WM_QUIT)
 	{
 		return 1;
-	}
-	if(!TranslateAccelerator(msg.hwnd, NULL, &msg)) 
-	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
 	}
 	return 0;
 }
@@ -246,4 +229,5 @@ void MainFrameSetTitle(const char *str)
 	SetWindowTextA(s_hAppWnd, str);
 }
 
-#endif
+#endif //USE_WGL
+

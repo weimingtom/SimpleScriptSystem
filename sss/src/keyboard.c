@@ -1,20 +1,20 @@
 #include "config.h"
 
-#if USE_GDI
+#if USE_GDI || USE_WGL
 #include <windows.h>
-#endif
+#endif 
 
 #if USE_SDL
 #ifndef BOOL
 #define BOOL int
-#endif
+#endif 
 #ifndef TRUE
 #define TRUE 1
-#endif
+#endif 
 #ifndef FALSE
 #define FALSE 0
-#endif
-#endif
+#endif 
+#endif 
 
 #include <string.h>
 #include "keyboard.h"
@@ -83,8 +83,10 @@ int KeyboardGetKeyboardStatus(void)
     int status;
     if (KeyboardGetBufNum(s_KBuffer.head, s_KBuffer.tail) > 0)
     {
-		//MiscTrace("KeyboardGetBufNum: %d\n", 
-		//	KeyboardGetBufNum(s_KBuffer.head, s_KBuffer.tail));
+		/*
+		MiscTrace("KeyboardGetBufNum: %d\n", 
+		   KeyboardGetBufNum(s_KBuffer.head, s_KBuffer.tail));
+		*/
         s_KBuffer.reading = TRUE;
         status = s_KBuffer.buffer[s_KBuffer.head];
 		if (s_KBuffer.head == BUFSIZE - 1)

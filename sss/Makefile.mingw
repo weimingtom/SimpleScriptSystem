@@ -13,9 +13,11 @@ OBJS += src/canvas_gdi.o src/canvas_sdl.o
 OBJS += src/mainframe_gdi.o src/mainframe_sdl.o 
 OBJS += src/misc.o src/keyboard.o
 OBJS += src/mouse.o src/script.o
+OBJS += src/canvas_wgl.o src/mainframe_wgl.o 
 
 LIBS := 
 LIBS += lib/python22.lib lib/libSDLmain.a lib/libSDL.dll.a
+LIBS += -lopengl32 -lglu32
 
 RCINCS := --include-dir=./res
 

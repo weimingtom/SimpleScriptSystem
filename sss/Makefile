@@ -12,10 +12,11 @@ LIBS += `sdl-config --libs`
 LIBS += `python-config --libs`
 
 OBJS :=
-OBJS += src/canvas_gdi.o src/canvas_sdl.o 
+OBJS += src/canvas_gdi.o src/canvas_sdl.o
 OBJS += src/mainframe_gdi.o src/mainframe_sdl.o 
 OBJS += src/misc.o src/keyboard.o
 OBJS += src/mouse.o src/script.o
+OBJS += src/canvas_wgl.o src/mainframe_wgl.o 
 
 all : $(BIN)
 

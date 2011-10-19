@@ -1,6 +1,6 @@
 #include "config.h"
 
-#if USE_GDI
+#if USE_GDI || USE_WGL
 #include <windows.h>
 #endif
 #include <string.h>

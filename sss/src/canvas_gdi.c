@@ -22,9 +22,9 @@ HDC CanvasInit(HWND hWnd)
 	s_hBitmap = CreateCompatibleBitmap(hDC, 
 		rect.right - rect.left, 
 		rect.bottom - rect.left);
-	s_hPen = CreatePen(PS_SOLID, 0, RGB(255, 255, 255));
+	s_hPen = CreatePen(PS_SOLID, 0, 0);
 	s_hBackBufferDC = CreateCompatibleDC(hDC);
-	s_hBrush = (HBRUSH)CreateSolidBrush(RGB(0, 0, 0));
+	s_hBrush = (HBRUSH)CreateSolidBrush(WINDOW_BGCOLOR);
 	/*
 	 * NOTE: bitmap object must be selected
 	 */
@@ -83,7 +83,7 @@ void CanvasDrawLine(int x1, int y1, int x2, int y2, int color)
 
 void CanvasLock()
 {
-
+	Rectangle(s_hBackBufferDC, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 }
 
 void CanvasUnlock()
@@ -97,3 +97,4 @@ int CanvasRGB(int r, int g, int b)
 }
 
 #endif
+

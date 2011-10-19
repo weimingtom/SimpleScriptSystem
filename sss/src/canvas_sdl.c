@@ -14,11 +14,7 @@ static int s_currentY;
 
 static void CanvasClearScreen(void)
 {
-	Uint8 *buffer;
 	CanvasLock();
-	buffer = (Uint8 *)s_screen->pixels;
-	memset(buffer, 0, 
-		(s_screen->h) * (s_screen->w) * (s_screen->format->BytesPerPixel)); 
 	CanvasUnlock();
 	SDL_UpdateRect(s_screen, 0, 0, 0, 0);
 }
@@ -50,8 +46,19 @@ void CanvasRelease(void)
 	s_screen = NULL;
 }
 
+#if 0
+static void clear()
+{
+	Uint8 *buffer;
+    buffer = (Uint8 *)s_screen->pixels;
+	memset(buffer, 0, 
+		(s_screen->h) * (s_screen->w) * (s_screen->format->BytesPerPixel));
+}
+#endif
+
 void CanvasLock(void)
 {
+	static SDL_Rect area = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
 	if(SDL_MUSTLOCK(s_screen))
 	{
 		if(SDL_LockSurface(s_screen) < 0)
@@ -60,6 +67,11 @@ void CanvasLock(void)
 			exit(3);
 		}
 	}
+	SDL_FillRect(s_screen, &area, 
+		SDL_MapRGB(s_screen->format, 
+		(Uint8)WINDOW_BGCOLOR, 
+		(Uint8)(WINDOW_BGCOLOR >> 8), 
+		(Uint8)(WINDOW_BGCOLOR >> 16)));
 }
 
 void CanvasUnlock(void)
