@@ -43,6 +43,7 @@ SDL_Surface* CanvasInit(void)
 
 void CanvasRelease(void)
 {
+	SDL_FreeSurface(s_screen);
 	s_screen = NULL;
 }
 

@@ -232,7 +232,7 @@ int ScriptRun(void)
 {
 	Py_SetProgramName(SSS_APPNAME);
 	Py_Initialize();
-	if(import())
+	if (import())
 	{
 		startup();
 	}

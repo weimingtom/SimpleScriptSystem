@@ -24,6 +24,7 @@ static int s_done;
 #endif
 int main(int argc, char *argv[])
 {
+	MiscAppInit();
 	if (SDL_Init(SDL_INIT_VIDEO) < 0) 
 	{
 		MiscTrace("Couldn't initialize SDL: %s\n",SDL_GetError());
@@ -38,16 +39,35 @@ int main(int argc, char *argv[])
 	s_screenArea.w = WINDOW_WIDTH;
 	s_screenArea.h = WINDOW_HEIGHT;
 	s_done = 0;
-	/*
+#if 0
 	while (1) 
 	{
 		if(MainFrameGetMsg())
 		{
 			break;
 		}
+		{
+			int k = 0;
+			int width = WINDOW_WIDTH;
+			int height = WINDOW_HEIGHT;
+			CanvasLock();
+			CanvasSetColor(CanvasRGB(0xff, 0, 0));
+			CanvasMoveTo(0, 0);
+			CanvasLineTo(width * 2, height * 2);
+			for (k = height / 4; k < height / 2; k++)
+			{
+				CanvasSetPixel(width / 2, k, 
+					CanvasRGB(0xff, 0, 0xff));
+			}
+			CanvasDrawLine(-width, height * 2, width * 2, -height, 
+				CanvasRGB(0, 0, 0xff));
+			CanvasUnlock();
+			MainFrameRefresh();
+		}
 	}
-	*/
+#else
 	ScriptRun();
+#endif
 	KeyboardRelease();
 	MouseRelease();
 	CanvasRelease();

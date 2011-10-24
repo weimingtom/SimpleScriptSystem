@@ -143,6 +143,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 		NULL
 	};
     RECT R = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
+	MiscAppInit();
 	if(!RegisterClassEx(&wcex))
     {
 		return 0;

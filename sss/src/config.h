@@ -4,6 +4,44 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 
+/* ================================= */
+
+#if defined(_MSC_VER) && defined(_DEBUG)
+
+/*
+see 
+http://www.nokuno.jp/secret/program2.html
+*/
+#include <crtdbg.h>
+#include <malloc.h>
+#include <stdlib.h>
+#define _CRTDBG_MAP_ALLOC
+#define new  ::new(_NORMAL_BLOCK, __file__, __line__)
+
+#ifdef malloc
+#undef malloc
+#endif
+#define malloc(s) (_malloc_dbg(s, _NORMAL_BLOCK, __FILE__, __LINE__))
+
+#ifdef new
+#undef new
+#endif
+#define new DEBUG_NEW
+
+/*
+On Windows, when application start: 
+_crtsetdbgflag(_crtdbg_alloc_mem_df | _crtdbg_leak_check_df);
+*/
+#endif
+
+/*
+FIXME: 
+python 2.2.2 on win32 has memory leak
+*/
+#define USE_WIN_LEAK 0
+
+/* ================================= */
+
 #define BUFSIZE 256
 
 #define WINDOW_WIDTH 800

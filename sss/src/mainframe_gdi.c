@@ -181,6 +181,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
         LPSTR lpCmdLine,
 	int nCmdShow)
 {
+	MiscAppInit();
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
 	MyRegisterClass(hInstance);
