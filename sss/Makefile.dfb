@@ -1,0 +1,43 @@
+# 
+# make: warning:  Clock skew detected.  Your build may be incomplete.
+# 
+# find . -type f | xargs -n 5 touch
+#
+
+TOOLTRAIN := 
+
+CC	:= ${TOOLTRAIN}gcc
+LD	:= ${TOOLTRAIN}ld
+RM	:= rm -f
+
+CFLAGS := -g -I. -L.
+CFLAGS += `directfb-config --cflags` 
+CFLAGS += `python-config --cflags`
+
+LIBS := 
+LIBS += `directfb-config --libs` 
+LIBS += `python-config --libs`
+
+OBJS :=
+OBJS += src/canvas_gdi.o src/canvas_sdl.o
+OBJS += src/mainframe_gdi.o src/mainframe_sdl.o 
+OBJS += src/misc.o src/keyboard.o
+OBJS += src/mouse.o src/script.o
+OBJS += src/canvas_wgl.o src/mainframe_wgl.o 
+OBJS += src/canvas_dfb.o src/mainframe_dfb.o
+
+TARGET := sss
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS) 
+	${CC} ${CFLAGS} -o $@ $(OBJS) ${LIBS}
+
+%.o : %.c
+	${CC} ${CFLAGS} -o $@ -c $<
+	
+clean:
+	${RM} ${OBJS} ${TARGET}
+

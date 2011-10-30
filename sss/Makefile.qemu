@@ -1,0 +1,44 @@
+TOOLTRAIN := i686-pc-linux-gnu-
+
+CC	:= ${TOOLTRAIN}gcc
+LD	:= ${TOOLTRAIN}ld
+RM	:= rm -f
+GENCPIO := gen_init_cpio
+
+CFLAGS := -g -I. -L.
+CFLAGS += -I/local/DirectFB-1.5.3/include/directfb  
+CFLAGS += -L/local/DirectFB-1.5.3/lib
+CFLAGS += -I/local/Python-2.2.2/include/python2.2
+CFLAGS += -L/local/Python-2.2.2/lib/python2.2/config
+
+LIBS   := -ldirectfb -lfusion -ldirect -lpython2.2 -lpthread -lutil -lm
+# OBJS   := mainframe.o
+OBJS += src/canvas_gdi.o src/canvas_sdl.o
+OBJS += src/mainframe_gdi.o src/mainframe_sdl.o 
+OBJS += src/misc.o src/keyboard.o
+OBJS += src/mouse.o src/script.o
+OBJS += src/canvas_wgl.o src/mainframe_wgl.o 
+OBJS += src/canvas_dfb.o src/mainframe_dfb.o
+
+TARGET := sss
+
+# .PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS) 
+	${CC} ${CFLAGS} -o $@ $(OBJS) ${LIBS}
+
+%.o : %.c
+	${CC} ${CFLAGS} -o $@ -c $<
+	
+clean:
+	${RM} ${OBJS} ${TARGET} *.img *.img.gz
+
+cpio:
+	${RM} rootfs.img rootfs.img.gz
+	${GENCPIO} list.txt > rootfs.img
+	gzip -c rootfs.img > rootfs.img.gz
+
+run: cpio
+	start run.bat

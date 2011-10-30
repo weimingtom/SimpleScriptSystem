@@ -8,7 +8,6 @@
 #include "mouse.h"
 #include "misc.h"
 
-#if USE_SDL
 #ifndef BOOL
 #define BOOL int
 #endif
@@ -17,7 +16,6 @@
 #endif
 #ifndef FALSE
 #define FALSE 0
-#endif
 #endif
 
 #define PEN_DOWN 0xC0
@@ -139,9 +137,11 @@ int MouseGetMouseStatus(void)
     int status;
     if (MouseGetBufNum(s_MBuffer.head, s_MBuffer.tail) > 0)
     {
-		//MiscTrace("MouseGetBufNum: %d\n", 
-		//	MouseGetBufNum(s_MBuffer.head, s_MBuffer.tail));
-        s_MBuffer.reading = TRUE;
+		/*
+		MiscTrace("MouseGetBufNum: %d\n", 
+			MouseGetBufNum(s_MBuffer.head, s_MBuffer.tail));
+        */
+		s_MBuffer.reading = TRUE;
         status = s_MBuffer.buffer[s_MBuffer.head];
 		if (s_MBuffer.head == BUFSIZE - 1)
 		{

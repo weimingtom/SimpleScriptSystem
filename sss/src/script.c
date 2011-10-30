@@ -196,8 +196,13 @@ static void startup(void)
 {
 	int ret;
 	ret = PyRun_SimpleString(
+#if USE_DFB
+		"width = 640\n"
+		"height = 480\n"
+#else
 		"width = 800\n"
 		"height = 600\n"
+#endif
 		"SSS.resize(width, height)\n"
 		"while 1:\n"
 		"	if SSS.getMsg():\n"

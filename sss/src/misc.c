@@ -45,3 +45,10 @@ void MiscAppInit(void)
 	malloc(10);
 	*/
 }
+
+void MiscAppExit(void)
+{
+#if defined(WIN32) && defined(_DEBUG) && USE_WIN_LEAK
+	_CrtDumpMemoryLeaks();
+#endif
+}

@@ -4,7 +4,6 @@
 #include <windows.h>
 #endif 
 
-#if USE_SDL
 #ifndef BOOL
 #define BOOL int
 #endif 
@@ -13,7 +12,6 @@
 #endif 
 #ifndef FALSE
 #define FALSE 0
-#endif 
 #endif 
 
 #include <string.h>

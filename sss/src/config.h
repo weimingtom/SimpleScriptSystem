@@ -16,12 +16,29 @@ http://www.nokuno.jp/secret/program2.html
 #include <malloc.h>
 #include <stdlib.h>
 #define _CRTDBG_MAP_ALLOC
+/*
 #define new  ::new(_NORMAL_BLOCK, __file__, __line__)
+*/
 
 #ifdef malloc
 #undef malloc
 #endif
 #define malloc(s) (_malloc_dbg(s, _NORMAL_BLOCK, __FILE__, __LINE__))
+
+#ifdef free
+#undef free
+#endif
+#define free(s) (_free_dbg(s, _NORMAL_BLOCK))
+
+#ifdef calloc
+#undef calloc
+#endif
+#define calloc(m, s) (_calloc_dbg(m, s, _NORMAL_BLOCK, __FILE__, __LINE__))
+
+#ifdef realloc
+#undef realloc
+#endif
+#define realloc(m, s) (_realloc_dbg(m, s, _NORMAL_BLOCK, __FILE__, __LINE__))
 
 #ifdef new
 #undef new
@@ -30,7 +47,7 @@ http://www.nokuno.jp/secret/program2.html
 
 /*
 On Windows, when application start: 
-_crtsetdbgflag(_crtdbg_alloc_mem_df | _crtdbg_leak_check_df);
+_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 */
 #endif
 
@@ -57,6 +74,8 @@ python 2.2.2 on win32 has memory leak
 #define USE_SDL 1
 /* OpenGL on Windows */
 #define USE_WGL 0 
+/* DirectFB on Linux */
+#define USE_DFB 0
 
 #if USE_GDI || USE_WGL
 #define SSS_CLASS "SimpleScriptSystem"
@@ -67,4 +86,17 @@ python 2.2.2 on win32 has memory leak
 #define WIN_BPP 32
 #define NUM_COLORS	256
 #define SSS_TITLE SSS_APPNAME " SDL " SSS_VERSION
+#endif
+
+#if USE_DFB
+#define DFBCHECK(x...) \
+  { \
+    DFBResult err = x; \
+    \
+    if (err != DFB_OK) \
+      { \
+        fprintf( stderr, "%s <%d>:\n\t", __FILE__, __LINE__ ); \
+        DirectFBErrorFatal( #x, err ); \
+      } \
+  }
 #endif

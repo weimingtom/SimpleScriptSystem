@@ -1,0 +1,118 @@
+# directories
+dir /bin 0755 0 0
+dir /dev 0755 0 0
+dir /etc 0755 0 0
+dir /etc/init.d 0755 0 0
+dir /proc 0755 0 0
+dir /sbin 0755 0 0
+dir /sys 0755 0 0
+dir /root 0700 0 0
+dir /sbin 0755 0 0
+dir /usr 0755 0 0
+dir /tmp 0755 0 0
+dir /lib 0755 0 0
+
+# config 
+file /etc/init.d/rcS /root/etc/init.d/rcS 0755 0 0
+
+# libraries
+file /lib/ld-linux.so.2 /root/lib/ld-linux.so.2 0755 0 0
+file /lib/libc.so.6 /root/lib/libc.so.6 0755 0 0
+file /lib/libdl.so.2 /root/lib/libdl.so.2 0755 0 0
+file /lib/libgcc_s.so.1 /root/lib/libgcc_s.so.1 0755 0 0
+file /lib/libm.so.6 /root/lib/libm.so.6 0755 0 0
+file /lib/libpthread.so.0 /root/lib/libpthread.so.0 0755 0 0
+file /lib/librt.so.1 /root/lib/librt.so.1 0755 0 0
+file /lib/libstdc++.so.6 /root/lib/libstdc++.so.6 0755 0 0 
+#
+file /lib/libsysfs.so.2 /root/lib/libsysfs.so.2 0755 0 0
+file /lib/libfreetype.so.6 /root/lib/libfreetype.so.6 0755 0 0
+file /lib/libz.so.1 /root/lib/libz.so.1 0755 0 0
+file /lib/libpng12.so.0 /root/lib/libpng12.so.0 0755 0 0
+file /lib/libutil.so.1 /root/lib/libutil.so.1 0755 0 0
+
+# busybox
+file /bin/busybox /root/bin/busybox 0755 0 0
+slink /linuxrc /bin/busybox 0755 0 0
+slink /bin/ls /bin/busybox 0755 0 0
+slink /bin/sh /bin/busybox 0755 0 0
+slink /bin/cat /bin/busybox 0755 0 0
+slink /bin/cp /bin/busybox 0755 0 0
+slink /bin/mv /bin/busybox 0755 0 0
+slink /bin/mkdir /bin/busybox 0755 0 0
+slink /bin/rm /bin/busybox 0755 0 0
+slink /bin/ps /bin/busybox 0755 0 0
+slink /bin/kill /bin/busybox 0755 0 0
+slink /bin/chmod /bin/busybox 0755 0 0
+slink /bin/echo /bin/busybox 0755 0 0
+slink /bin/uname /bin/busybox 0755 0 0
+slink /bin/umount /bin/busybox 0755 0 0
+slink /bin/mount /bin/busybox 0755 0 0
+slink /bin/vi /bin/busybox 0755 0 0
+slink /bin/top /bin/busybox 0755 0 0
+slink /bin/clear /bin/busybox 0755 0 0
+slink /bin/ping /bin/busybox 0755 0 0
+slink /bin/netstat /bin/busybox 0755 0 0
+slink /bin/nice /bin/busybox 0755 0 0
+
+slink /sbin/init /bin/busybox 0755 0 0
+slink /sbin/mdev /bin/busybox 0755 0 0
+slink /sbin/reboot /bin/busybox 0755 0 0
+slink /sbin/ifconfig /bin/busybox 0755 0 0
+slink /sbin/route /bin/busybox 0755 0 0
+slink /sbin/swapon /bin/busybox 0755 0 0
+slink /sbin/swapoff /bin/busybox 0755 0 0
+
+# my files
+file /bin/strace /root/bin/strace 0755 0 0
+file /lib/libdirect-1.5.so.0.0.3 /local/DirectFB-1.5.3/lib/libdirect-1.5.so.0.0.3 0755 0 0
+slink /lib/libdirect-1.5.so.0 /lib/libdirect-1.5.so.0.0.3 0755 0 0
+slink /lib/libdirect.so /lib/libdirect-1.5.so.0.0.3 0755 0 0
+
+file /lib/libdirectfb-1.5.so.0.0.3 /local/DirectFB-1.5.3/lib/libdirectfb-1.5.so.0.0.3 0755 0 0
+slink /lib/libdirectfb-1.5.so.0 /lib/libdirectfb-1.5.so.0.0.3 0755 0 0
+slink /lib/libdirectfb.so /lib/libdirectfb-1.5.so.0.0.3 0755 0 0
+
+file /lib/libfusion-1.5.so.0.0.3 /local/DirectFB-1.5.3/lib/libfusion-1.5.so.0.0.3 0755 0 0
+slink /lib/libfusion-1.5.so.0 /lib/libfusion-1.5.so.0.0.3 0755 0 0
+slink /lib/libfusion.so /lib/libfusion-1.5.so.0.0.3 0755 0 0
+
+dir /home 0755 0 0
+dir /home/wmt 0755 0 0
+dir /home/wmt/directfb2 0755 0 0
+dir /home/wmt/directfb2/lib 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/systems 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/wm 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/interfaces 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/interfaces/IDirectFBFont 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/interfaces/IDirectFBImageProvider 0755 0 0
+dir /home/wmt/directfb2/lib/directfb-1.5-0/inputdrivers 0755 0 0
+#file /home/wmt/directfb2/lib/directfb-1.5-0/systems/libdirectfb_devmem.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/systems/libdirectfb_devmem.so 0755 0 0
+#file /home/wmt/directfb2/lib/directfb-1.5-0/systems/libdirectfb_dummy.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/systems/libdirectfb_dummy.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/systems/libdirectfb_fbdev.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/systems/libdirectfb_fbdev.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/wm/libdirectfbwm_default.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/wm/libdirectfbwm_default.so 0755 0 0
+#file /home/wmt/directfb2/lib/directfb-1.5-0/interfaces/IDirectFBFont/libidirectfbfont_dgiff.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/interfaces/IDirectFBFont/libidirectfbfont_dgiff.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/interfaces/IDirectFBFont/libidirectfbfont_ft2.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/interfaces/IDirectFBFont/libidirectfbfont_ft2.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_png.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_png.so 0755 0 0
+#file /home/wmt/directfb2/lib/directfb-1.5-0/inputdrivers/libdirectfb_linux_input.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/inputdrivers/libdirectfb_linux_input.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/inputdrivers/libdirectfb_keyboard.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/inputdrivers/libdirectfb_keyboard.so 0755 0 0
+file /home/wmt/directfb2/lib/directfb-1.5-0/inputdrivers/libdirectfb_ps2mouse.so /local/DirectFB-1.5.3/lib/directfb-1.5-0/inputdrivers/libdirectfb_ps2mouse.so 0755 0 0
+
+dir /home/wmt/directfb2/share 0755 0 0
+dir /home/wmt/directfb2/share/directfb-1.5.3 0755 0 0
+dir /home/wmt/directfb2/share/directfb-examples 0755 0 0
+dir /home/wmt/directfb2/share/directfb-examples/fonts 0755 0 0
+file /home/wmt/directfb2/share/directfb-1.5.3/cursor.dat /local/DirectFB-1.5.3/share/directfb-1.5.3/cursor.dat 0666 0 0
+file /home/wmt/directfb2/share/directfb-examples/desktop.png /local/DirectFB-1.5.3/share/directfb-examples/desktop.png 0666 0 0
+file /home/wmt/directfb2/share/directfb-examples/dfblogo.png /local/DirectFB-1.5.3/share/directfb-examples/dfblogo.png 0666 0 0
+file /home/wmt/directfb2/share/directfb-examples/fonts/decker.ttf /local/DirectFB-1.5.3/share/directfb-examples/fonts/decker.ttf 0666 0 0
+
+file /df_window /local/DirectFB-1.5.3/bin/df_window 0755 0 0
+file /df_input /local/DirectFB-1.5.3/bin/df_input 0755 0 0
+file /python /local/Python-2.2.2/bin/python 0755 0 0
+file /sss /home/Administrator/sss/sss 0755 0 0
+
+file /directfb.png /home/Administrator/directfb/directfb.png 0666 0 0
+file /decker.ttf /home/Administrator/directfb/decker.ttf 0666 0 0
+file /onpu.png /home/Administrator/directfb/onpu.png 0666 0 0

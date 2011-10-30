@@ -9,6 +9,10 @@ extern HDC CanvasInit(HWND hWnd);
 #include <SDL.h>
 extern SDL_Surface* CanvasInit(void);
 #endif
+#if USE_DFB
+#include <directfb.h>
+extern IDirectFBSurface *CanvasInit(IDirectFB *dfb, char *text, int lenText);
+#endif
 extern void CanvasRelease(void);
 
 //lock canvas

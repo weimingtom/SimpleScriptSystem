@@ -1,8 +1,9 @@
 --------------------------
 I. Build & run platform
-* Visual Studio 6.0 on Windows XP
-* MinGW 3.4.5 (mingw-vista special r3) on Windows XP
-* GCC 4.4.3 on Ubuntu 10.04
+* Visual Studio 6.0 on Windows XP (Microsoft Windows XP [version 5.1.2600])
+* MinGW 3.4.5 (mingw-vista special r3) on Windows XP (Microsoft Windows XP [version 5.1.2600])
+* GCC 4.4.3 on Ubuntu 10.04 (Linux ubuntu 2.6.32-21-generic)
+* QEMU for Windows, Linux (linux 2.6.39.2)
 
 --------------------------
 II. How to build
@@ -24,6 +25,12 @@ II. How to build
 3) Ubuntu
 	$ sudo apt-get install libsdl-dev
 
+* Build or install DirectFB
+1) Ubuntu
+	Download source from http://www.directfb.org/
+	or 
+	$ sudo apt-get install libdirectfb-dev
+
 * Build Simple Script System
 1) VC6
 	Open SimpleScriptSystem.dsw.
@@ -31,15 +38,23 @@ II. How to build
 	$ make -f Makefile.mingw clean
 	$ make -f Makefile.mingw
 3) Ubuntu
-	$ make clean
-	$ make
-
+	* for SDL
+		$ make clean
+		$ make
+	* for DirectFB
+		$ make -f Makefile.dfb clean
+		$ make -f Makefile.dfb
+	* for QEMU on Windows (only for me)
+		$ make -f Makefile.qemu clean
+		$ make -f Makefile.qemu 
+		
 --------------------------
 III. Build Configure
 1) Modify config.h
 	USE_GDI : use Windows GDI (Windows)
 	USE_SDL : use SDL (Windows / Ubuntu)
 	USE_WGL : use OpenGL (Windows)
+	USE_DFB : use DirectFB (QEMU on Windows / Ubuntu)
 
 --------------------------
 IV. Status
