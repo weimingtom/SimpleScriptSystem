@@ -13,6 +13,37 @@ extern SDL_Surface* CanvasInit(void);
 #include <directfb.h>
 extern IDirectFBSurface *CanvasInit(IDirectFB *dfb, char *text, int lenText);
 #endif
+#if USE_ANA
+#include <EGL/egl.h>
+#include <GLES/gl.h>
+#include <android/sensor.h>
+#include <android_native_app_glue.h>
+/**
+ * Our saved state data.
+ */
+struct saved_state {
+    float angle;
+    int32_t x;
+    int32_t y;
+};
+/**
+ * Shared state for our app.
+ */
+struct engine {
+    struct android_app* app;
+    ASensorManager* sensorManager;
+    const ASensor* accelerometerSensor;
+    ASensorEventQueue* sensorEventQueue;
+    int animating;
+    EGLDisplay display;
+    EGLSurface surface;
+    EGLContext context;
+    int32_t width;
+    int32_t height;
+    struct saved_state state;
+};
+extern void CanvasInit(struct android_app* pState, struct engine* pEngine);
+#endif
 extern void CanvasRelease(void);
 
 //lock canvas

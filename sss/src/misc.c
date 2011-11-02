@@ -6,7 +6,9 @@
 #include <windows.h>
 #include <crtdbg.h>
 #endif
-
+#if USE_ANA
+#include <android/log.h>
+#endif
 #include "misc.h"
 
 void MiscTrace(const char *fmt, ...)
@@ -15,10 +17,14 @@ void MiscTrace(const char *fmt, ...)
 	va_list args;
 	va_start(args, fmt);
 	vsprintf(str, fmt, args);
+#if USE_ANA
+	__android_log_vprint(ANDROID_LOG_INFO, SSS_APPNAME, fmt, args);
+#else
 #ifdef WIN32
 	OutputDebugStringA(str);
 #else
 	fprintf(stderr, "%s", str);
+#endif
 #endif
     va_end(args);
 }

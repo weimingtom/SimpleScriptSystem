@@ -1,0 +1,993 @@
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Modules/python.o Modules/python.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/acceler.o Parser/acceler.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/grammar1.o Parser/grammar1.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/listnode.o Parser/listnode.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/node.o Parser/node.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/parser.o Parser/parser.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/parsetok.o Parser/parsetok.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/tokenizer.o Parser/tokenizer.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/bitset.o Parser/bitset.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/metagrammar.o Parser/metagrammar.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/myreadline.o Parser/myreadline.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/abstract.o Objects/abstract.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/bufferobject.o Objects/bufferobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/cellobject.o Objects/cellobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/classobject.o Objects/classobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/cobject.o Objects/cobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/complexobject.o Objects/complexobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/descrobject.o Objects/descrobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/fileobject.o Objects/fileobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/floatobject.o Objects/floatobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/frameobject.o Objects/frameobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/funcobject.o Objects/funcobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/intobject.o Objects/intobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/iterobject.o Objects/iterobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/listobject.o Objects/listobject.c
+Objects/listobject.c: In function ‘list_richcompare’:
+Objects/listobject.c:1525: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Objects/listobject.c:1529: warning: dereferencing type-punned pointer will break strict-aliasing rules
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/longobject.o Objects/longobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/dictobject.o Objects/dictobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/methodobject.o Objects/methodobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/moduleobject.o Objects/moduleobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/object.o Objects/object.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/rangeobject.o Objects/rangeobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/sliceobject.o Objects/sliceobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/stringobject.o Objects/stringobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/structseq.o Objects/structseq.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/tupleobject.o Objects/tupleobject.c
+Objects/tupleobject.c: In function ‘tuplerichcompare’:
+Objects/tupleobject.c:474: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Objects/tupleobject.c:478: warning: dereferencing type-punned pointer will break strict-aliasing rules
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/typeobject.o Objects/typeobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/weakrefobject.o Objects/weakrefobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/unicodeobject.o Objects/unicodeobject.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Objects/unicodectype.o Objects/unicodectype.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/bltinmodule.o Python/bltinmodule.c
+Python/bltinmodule.c: In function ‘builtin_hasattr’:
+Python/bltinmodule.c:682: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Python/bltinmodule.c:686: warning: dereferencing type-punned pointer will break strict-aliasing rules
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/exceptions.o Python/exceptions.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/ceval.o Python/ceval.c
+Python/ceval.c: In function ‘eval_frame’:
+Python/ceval.c:871: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Python/ceval.c:876: warning: dereferencing type-punned pointer will break strict-aliasing rules
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/mysnprintf.o Python/mysnprintf.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/firstsets.o Parser/firstsets.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/grammar.o Parser/grammar.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/pgen.o Parser/pgen.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/printgrammar.o Parser/printgrammar.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Parser/pgenmain.o Parser/pgenmain.c
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes  Parser/acceler.o Parser/grammar1.o Parser/listnode.o Parser/node.o Parser/parser.o Parser/parsetok.o Parser/tokenizer.o Parser/bitset.o Parser/metagrammar.o Python/mysnprintf.o Parser/firstsets.o Parser/grammar.o Parser/pgen.o Parser/printgrammar.o Parser/pgenmain.o -ldl  -o Parser/pgen.exe
+Parser/pgen.exe ./Grammar/Grammar ./Include/graminit.h ./Python/graminit.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/compile.o Python/compile.c
+Python/compile.c:580: warning: ‘dump’ defined but not used
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/codecs.o Python/codecs.c
+Python/codecs.c: In function ‘normalizestring’:
+Python/codecs.c:104: warning: array subscript has type ‘char’
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/errors.o Python/errors.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/frozen.o Python/frozen.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/frozenmain.o Python/frozenmain.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/future.o Python/future.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getargs.o Python/getargs.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getcompiler.o Python/getcompiler.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getcopyright.o Python/getcopyright.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getmtime.o Python/getmtime.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H -DPLATFORM='"cygwin"' -o Python/getplatform.o ./Python/getplatform.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getversion.o Python/getversion.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/graminit.o Python/graminit.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/import.o Python/import.c
+Python/import.c: In function ‘case_ok’:
+Python/import.c:1121: warning: implicit declaration of function ‘cygwin32_conv_to_win32_path’
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H -I. -o Python/importdl.o ./Python/importdl.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/marshal.o Python/marshal.c
+Python/marshal.c: In function ‘PyMarshal_ReadShortFromFile’:
+Python/marshal.c:310: warning: ‘rf.ptr’ may be used uninitialized in this function
+Python/marshal.c:637: note: ‘rf.ptr’ was declared here
+Python/marshal.c:310: warning: ‘rf.end’ may be used uninitialized in this function
+Python/marshal.c:637: note: ‘rf.end’ was declared here
+Python/marshal.c: In function ‘PyMarshal_ReadLongFromFile’:
+Python/marshal.c:329: warning: ‘rf.ptr’ may be used uninitialized in this function
+Python/marshal.c:645: note: ‘rf.ptr’ was declared here
+Python/marshal.c:329: warning: ‘rf.end’ may be used uninitialized in this function
+Python/marshal.c:645: note: ‘rf.end’ was declared here
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/modsupport.o Python/modsupport.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/mystrtoul.o Python/mystrtoul.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/pyfpe.o Python/pyfpe.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/pystate.o Python/pystate.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/pythonrun.o Python/pythonrun.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/structmember.o Python/structmember.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/symtable.o Python/symtable.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/sysmodule.o Python/sysmodule.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/traceback.o Python/traceback.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/getopt.o Python/getopt.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/dynload_shlib.o Python/dynload_shlib.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Python/thread.o Python/thread.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Modules/config.o Modules/config.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -DPYTHONPATH='":plat-cygwin:lib-tk"' \
+		-DPREFIX='"/usr/local"' \
+		-DEXEC_PREFIX='"/usr/local"' \
+		-DVERSION='"2.2"' \
+		-DVPATH='""' \
+		-o Modules/getpath.o ./Modules/getpath.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Modules/main.o Modules/main.c
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -o Modules/gcmodule.o Modules/gcmodule.c
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/threadmodule.c -o Modules/threadmodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/signalmodule.c -o Modules/signalmodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/posixmodule.c -o Modules/posixmodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/errnomodule.c -o Modules/errnomodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/_sre.c -o Modules/_sre.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/newmodule.c -o Modules/newmodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/symtablemodule.c -o Modules/symtablemodule.o
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H   -c ./Modules/xxsubtype.c -o Modules/xxsubtype.o
+if test -f buildno; then \
+		expr `cat buildno` + 1 >buildno1; \
+		mv -f buildno1 buildno; \
+	else echo 1 >buildno; fi
+gcc -c -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I./Include -DHAVE_CONFIG_H  -DBUILD=`cat buildno` -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c
+dlltool --export-all --output-def libpython2.2.dll.a Modules/getbuildinfo.o Parser/acceler.o Parser/grammar1.o Parser/listnode.o Parser/node.o Parser/parser.o Parser/parsetok.o Parser/tokenizer.o Parser/bitset.o Parser/metagrammar.o Parser/myreadline.o Objects/abstract.o Objects/bufferobject.o Objects/cellobject.o Objects/classobject.o Objects/cobject.o Objects/complexobject.o Objects/descrobject.o Objects/fileobject.o Objects/floatobject.o Objects/frameobject.o Objects/funcobject.o Objects/intobject.o Objects/iterobject.o Objects/listobject.o Objects/longobject.o Objects/dictobject.o Objects/methodobject.o Objects/moduleobject.o Objects/object.o Objects/rangeobject.o Objects/sliceobject.o Objects/stringobject.o Objects/structseq.o Objects/tupleobject.o Objects/typeobject.o Objects/weakrefobject.o Objects/unicodeobject.o Objects/unicodectype.o Python/bltinmodule.o Python/exceptions.o Python/ceval.o Python/compile.o Python/codecs.o Python/errors.o Python/frozen.o Python/frozenmain.o Python/future.o Python/getargs.o Python/getcompiler.o Python/getcopyright.o Python/getmtime.o Python/getplatform.o Python/getversion.o Python/graminit.o Python/import.o Python/importdl.o Python/marshal.o Python/modsupport.o Python/mystrtoul.o Python/mysnprintf.o Python/pyfpe.o Python/pystate.o Python/pythonrun.o Python/structmember.o Python/symtable.o Python/sysmodule.o Python/traceback.o Python/getopt.o Python/dynload_shlib.o Python/thread.o Modules/config.o Modules/getpath.o Modules/main.o Modules/gcmodule.o Modules/threadmodule.o Modules/signalmodule.o Modules/posixmodule.o Modules/errnomodule.o Modules/_sre.o Modules/newmodule.o Modules/symtablemodule.o Modules/xxsubtype.o
+gcc -shared -Wl,--enable-auto-image-base -Wl,--out-implib=libpython2.2.dll.a -o libpython2.2.dll Modules/getbuildinfo.o Parser/acceler.o Parser/grammar1.o Parser/listnode.o Parser/node.o Parser/parser.o Parser/parsetok.o Parser/tokenizer.o Parser/bitset.o Parser/metagrammar.o Parser/myreadline.o Objects/abstract.o Objects/bufferobject.o Objects/cellobject.o Objects/classobject.o Objects/cobject.o Objects/complexobject.o Objects/descrobject.o Objects/fileobject.o Objects/floatobject.o Objects/frameobject.o Objects/funcobject.o Objects/intobject.o Objects/iterobject.o Objects/listobject.o Objects/longobject.o Objects/dictobject.o Objects/methodobject.o Objects/moduleobject.o Objects/object.o Objects/rangeobject.o Objects/sliceobject.o Objects/stringobject.o Objects/structseq.o Objects/tupleobject.o Objects/typeobject.o Objects/weakrefobject.o Objects/unicodeobject.o Objects/unicodectype.o Python/bltinmodule.o Python/exceptions.o Python/ceval.o Python/compile.o Python/codecs.o Python/errors.o Python/frozen.o Python/frozenmain.o Python/future.o Python/getargs.o Python/getcompiler.o Python/getcopyright.o Python/getmtime.o Python/getplatform.o Python/getversion.o Python/graminit.o Python/import.o Python/importdl.o Python/marshal.o Python/modsupport.o Python/mystrtoul.o Python/mysnprintf.o Python/pyfpe.o Python/pystate.o Python/pythonrun.o Python/structmember.o Python/symtable.o Python/sysmodule.o Python/traceback.o Python/getopt.o Python/dynload_shlib.o Python/thread.o Modules/config.o Modules/getpath.o Modules/main.o Modules/gcmodule.o Modules/threadmodule.o Modules/signalmodule.o Modules/posixmodule.o Modules/errnomodule.o Modules/_sre.o Modules/newmodule.o Modules/symtablemodule.o Modules/xxsubtype.o \
+		-ldl    -lm 
+Creating library file: libpython2.2.dll.a
+gcc   -o python.exe \
+			Modules/python.o \
+			libpython2.2.dll.a -ldl    -lm  
+case $MAKEFLAGS in \
+	*-s*) CC='gcc' LDSHARED='gcc -shared -Wl,--enable-auto-image-base' OPT='-DNDEBUG -g -O3 -Wall -Wstrict-prototypes' ./python.exe -E ./setup.py -q build;; \
+	*) CC='gcc' LDSHARED='gcc -shared -Wl,--enable-auto-image-base' OPT='-DNDEBUG -g -O3 -Wall -Wstrict-prototypes' ./python.exe -E ./setup.py build;; \
+	esac
+running build
+running build_ext
+skipping 'struct' extension (up-to-date)
+skipping 'regex' extension (up-to-date)
+skipping 'pcre' extension (up-to-date)
+skipping '_hotshot' extension (up-to-date)
+skipping '_weakref' extension (up-to-date)
+skipping 'xreadlines' extension (up-to-date)
+skipping 'array' extension (up-to-date)
+skipping 'cmath' extension (up-to-date)
+skipping 'math' extension (up-to-date)
+skipping 'strop' extension (up-to-date)
+skipping 'time' extension (up-to-date)
+skipping 'operator' extension (up-to-date)
+skipping '_codecs' extension (up-to-date)
+skipping '_testcapi' extension (up-to-date)
+skipping 'unicodedata' extension (up-to-date)
+skipping '_locale' extension (up-to-date)
+skipping 'fcntl' extension (up-to-date)
+skipping 'pwd' extension (up-to-date)
+skipping 'grp' extension (up-to-date)
+skipping 'select' extension (up-to-date)
+skipping 'md5' extension (up-to-date)
+skipping 'sha' extension (up-to-date)
+skipping 'binascii' extension (up-to-date)
+skipping 'parser' extension (up-to-date)
+skipping 'cStringIO' extension (up-to-date)
+skipping 'cPickle' extension (up-to-date)
+skipping 'mmap' extension (up-to-date)
+skipping 'rotor' extension (up-to-date)
+skipping 'syslog' extension (up-to-date)
+skipping 'timing' extension (up-to-date)
+skipping 'audioop' extension (up-to-date)
+skipping 'imageop' extension (up-to-date)
+skipping 'rgbimg' extension (up-to-date)
+building 'readline' extension
+/home/Administrator/Python-2.2.2/Modules/readline.c:92: error: static declaration of ‘history_length’ follows non-static declaration
+/usr/include/readline/history.h:242: error: previous declaration of ‘history_length’ was here
+/home/Administrator/Python-2.2.2/Modules/readline.c: In function ‘flex_complete’:
+/home/Administrator/Python-2.2.2/Modules/readline.c:498: warning: implicit declaration of function ‘completion_matches’
+/home/Administrator/Python-2.2.2/Modules/readline.c:498: warning: return makes pointer from integer without a cast
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -DUSE_DL_IMPORT -I. -I/home/Administrator/Python-2.2.2/./Include -I/usr/local/include -I/home/Administrator/Python-2.2.2/Include -I/home/Administrator/Python-2.2.2 -c /home/Administrator/Python-2.2.2/Modules/readline.c -o build/temp.cygwin-1.7.9-i686-2.2/readline.o
+WARNING: building of extension "readline" failed: command 'gcc' failed with exit status 1
+skipping 'crypt' extension (up-to-date)
+skipping '_socket' extension (up-to-date)
+skipping 'termios' extension (up-to-date)
+skipping 'resource' extension (up-to-date)
+building '_curses' extension
+In file included from /home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:116:
+/home/Administrator/Python-2.2.2/./Include/py_curses.h:8:20: error: curses.h: No such file or directory
+In file included from /home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:116:
+/home/Administrator/Python-2.2.2/./Include/py_curses.h:36: error: expected specifier-qualifier-list before ‘WINDOW’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:141: error: ‘FALSE’ undeclared here (not in a function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesCheckERR’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:179: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:179: error: (Each undeclared identifier is reported only once
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:179: error: for each function it appears in.)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: At top level:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:193: error: expected declaration specifiers or ‘...’ before ‘chtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_ConvertToChtype’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:196: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:196: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:196: error: expected ‘;’ before ‘PyInt_AsLong’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘func_PyCursesSetupTermCalled’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:211: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘func_PyCursesInitialised’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:217: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘func_PyCursesInitialisedColor’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:223: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_untouchwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:291: warning: implicit declaration of function ‘untouchwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:291: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_touchwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:292: warning: implicit declaration of function ‘touchwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:292: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_redrawwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:293: warning: implicit declaration of function ‘redrawwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:293: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_winsertln’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:294: warning: implicit declaration of function ‘winsertln’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:294: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_werase’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:295: warning: implicit declaration of function ‘werase’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:295: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wdeleteln’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:296: warning: implicit declaration of function ‘wdeleteln’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:296: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_is_wintouched’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:298: warning: implicit declaration of function ‘is_wintouched’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:298: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:298: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:298: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wsyncup’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:300: warning: implicit declaration of function ‘wsyncup’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:300: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wsyncdown’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:301: warning: implicit declaration of function ‘wsyncdown’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:301: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wstandend’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:302: warning: implicit declaration of function ‘wstandend’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:302: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wstandout’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:303: warning: implicit declaration of function ‘wstandout’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:303: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wcursyncup’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:304: warning: implicit declaration of function ‘wcursyncup’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:304: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wclrtoeol’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:305: warning: implicit declaration of function ‘wclrtoeol’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:305: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wclrtobot’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:306: warning: implicit declaration of function ‘wclrtobot’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:306: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wclear’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:307: warning: implicit declaration of function ‘wclear’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:307: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_idcok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:309: warning: implicit declaration of function ‘idcok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:309: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_immedok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:310: warning: implicit declaration of function ‘immedok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:310: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wtimeout’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:311: warning: implicit declaration of function ‘wtimeout’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:311: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_getyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:313: warning: implicit declaration of function ‘getyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:313: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_getbegyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:314: warning: implicit declaration of function ‘getbegyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:314: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_getmaxyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:315: warning: implicit declaration of function ‘getmaxyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:315: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_getparyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:316: warning: implicit declaration of function ‘getparyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:316: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wattron’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:318: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:318: error: expected ‘;’ before ‘arg1’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:318: error: ‘arg1’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:318: warning: implicit declaration of function ‘wattron’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:318: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wattroff’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:319: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:319: error: expected ‘;’ before ‘arg1’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:319: error: ‘arg1’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:319: warning: implicit declaration of function ‘wattroff’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:319: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wattrset’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:320: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:320: error: expected ‘;’ before ‘arg1’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:320: error: ‘arg1’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:320: warning: implicit declaration of function ‘wattrset’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:320: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_clearok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:321: warning: implicit declaration of function ‘clearok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:321: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_idlok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:322: warning: implicit declaration of function ‘idlok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:322: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_keypad’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:326: warning: implicit declaration of function ‘keypad’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:326: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_leaveok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:328: warning: implicit declaration of function ‘leaveok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:328: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_nodelay’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:332: warning: implicit declaration of function ‘nodelay’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:332: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_notimeout’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:334: warning: implicit declaration of function ‘notimeout’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:334: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_scrollok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:335: warning: implicit declaration of function ‘scrollok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:335: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_winsdelln’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:336: warning: implicit declaration of function ‘winsdelln’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:336: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_syncok’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:337: warning: implicit declaration of function ‘syncok’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:337: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_mvwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:339: warning: implicit declaration of function ‘mvwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:339: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_mvderwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:340: warning: implicit declaration of function ‘mvderwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:340: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wmove’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:341: warning: implicit declaration of function ‘wmove’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:341: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_wresize’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:343: warning: implicit declaration of function ‘wresize’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:343: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: At top level:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:349: error: expected ‘)’ before ‘*’ token
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Dealloc’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:362: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:362: error: ‘stdscr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:362: warning: implicit declaration of function ‘delwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:362: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_AddCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:373: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:373: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:374: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:374: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:382: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:388: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:401: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:401: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:407: warning: implicit declaration of function ‘mvwaddch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:407: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:409: warning: implicit declaration of function ‘waddch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:409: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_AddStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:420: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:420: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:429: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:431: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:449: error: ‘attr_old’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:449: warning: implicit declaration of function ‘getattrs’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:449: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:450: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:453: warning: implicit declaration of function ‘mvwaddstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:453: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:455: warning: implicit declaration of function ‘waddstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:455: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:457: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_AddNStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:466: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:466: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:475: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:477: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:495: error: ‘attr_old’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:495: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:496: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:499: warning: implicit declaration of function ‘mvwaddnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:499: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:501: warning: implicit declaration of function ‘waddnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:501: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:503: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Bkgd’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:511: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:511: error: expected ‘;’ before ‘bkgd’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:512: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:512: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:520: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:528: error: ‘bkgd’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:528: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:533: warning: implicit declaration of function ‘wbkgd’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:533: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_BkgdSet’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:540: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:540: error: expected ‘;’ before ‘bkgd’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:541: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:541: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:549: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:557: error: ‘bkgd’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:557: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:562: warning: implicit declaration of function ‘wbkgdset’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:562: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Border’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:570: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:570: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:576: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:585: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:592: warning: implicit declaration of function ‘wborder’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:592: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Box’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:602: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:602: error: expected ‘;’ before ‘ch1’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:605: error: ‘ch1’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:605: error: ‘ch2’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:608: warning: implicit declaration of function ‘box’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:608: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: At top level:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:616: error: expected ‘)’ before ‘*’ token
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_DelCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:634: warning: implicit declaration of function ‘wdelch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:634: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:639: warning: implicit declaration of function ‘py_mvwdelch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:639: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_DerWin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:651: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:651: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:671: warning: implicit declaration of function ‘derwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:671: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:678: warning: implicit declaration of function ‘PyCursesWindow_New’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_EchoChar’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:685: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:685: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:686: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:686: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:694: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:704: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:704: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:715: warning: implicit declaration of function ‘wechochar’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:715: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_GetBkgd’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:736: warning: implicit declaration of function ‘getbkgd’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:736: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_GetCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:743: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:743: error: expected ‘;’ before ‘rtn’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:748: error: ‘rtn’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:748: warning: implicit declaration of function ‘wgetch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:748: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:755: warning: implicit declaration of function ‘mvwgetch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:755: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_GetKey’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:769: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:769: error: expected ‘;’ before ‘rtn’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:774: error: ‘rtn’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:774: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:781: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:794: warning: implicit declaration of function ‘keyname’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_GetStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:808: warning: implicit declaration of function ‘wgetstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:808: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:815: warning: implicit declaration of function ‘wgetnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:815: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:822: warning: implicit declaration of function ‘mvwgetstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:822: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:836: warning: implicit declaration of function ‘mvwgetnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:836: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:844: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Hline’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:853: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:853: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:854: error: ‘OK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:855: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:855: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:863: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:869: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:875: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:882: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:883: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:883: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:888: warning: implicit declaration of function ‘whline’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:888: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_InsCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:898: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:898: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:899: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:899: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:907: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:913: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:925: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:925: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:932: warning: implicit declaration of function ‘mvwinsch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:932: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:934: warning: implicit declaration of function ‘winsch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:934: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_InCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:946: warning: implicit declaration of function ‘winch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:946: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:951: warning: implicit declaration of function ‘mvwinch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:951: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_InStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:969: warning: implicit declaration of function ‘winstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:969: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:974: warning: implicit declaration of function ‘winnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:974: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:979: warning: implicit declaration of function ‘mvwinstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:979: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:984: warning: implicit declaration of function ‘mvwinnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:984: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:990: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_InsStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1001: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1001: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1010: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1012: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1030: error: ‘attr_old’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1030: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1031: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1034: warning: implicit declaration of function ‘mvwinsstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1034: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1036: warning: implicit declaration of function ‘winsstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1036: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1038: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_InsNStr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1047: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1047: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1056: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1058: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1076: error: ‘attr_old’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1076: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1077: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1080: warning: implicit declaration of function ‘mvwinsnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1080: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1082: warning: implicit declaration of function ‘winsnstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1082: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1084: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Is_LineTouched’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1094: warning: implicit declaration of function ‘is_linetouched’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1094: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1095: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1101: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1104: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_NoOutRefresh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1129: warning: implicit declaration of function ‘pnoutrefresh’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1129: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1145: warning: implicit declaration of function ‘wnoutrefresh’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1145: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Overlay’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1170: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1179: warning: implicit declaration of function ‘copywin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1179: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1179: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1184: warning: implicit declaration of function ‘overlay’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1184: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1184: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Overwrite’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1208: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1217: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1217: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1222: warning: implicit declaration of function ‘overwrite’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1222: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1222: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_PutWin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1238: warning: implicit declaration of function ‘putwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1238: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_RedrawLine’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1248: warning: implicit declaration of function ‘wredrawln’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1248: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Refresh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1272: warning: implicit declaration of function ‘prefresh’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1272: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1286: warning: implicit declaration of function ‘wrefresh’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1286: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_SetScrollRegion’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1298: warning: implicit declaration of function ‘wsetscrreg’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1298: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_SubWin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1304: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1304: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1330: warning: implicit declaration of function ‘subwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1330: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Scroll’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1346: warning: implicit declaration of function ‘scroll’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1346: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1350: warning: implicit declaration of function ‘wscrl’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1350: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_TouchLine’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1365: warning: implicit declaration of function ‘touchline’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1365: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1369: warning: implicit declaration of function ‘wtouchln’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1369: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCursesWindow_Vline’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1380: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1380: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1381: error: ‘OK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1382: error: ‘attr_t’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1382: error: expected ‘;’ before ‘attr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1390: error: ‘attr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1396: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1402: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1409: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1410: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1410: error: too many arguments to function ‘PyCurses_ConvertToChtype’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1415: warning: implicit declaration of function ‘wvline’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1415: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_beep’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1534: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1534: warning: implicit declaration of function ‘beep’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_def_prog_mode’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1535: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1535: warning: implicit declaration of function ‘def_prog_mode’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_def_shell_mode’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1536: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1536: warning: implicit declaration of function ‘def_shell_mode’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_doupdate’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1537: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1537: warning: implicit declaration of function ‘doupdate’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_endwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1538: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1538: warning: implicit declaration of function ‘endwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_flash’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1539: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1539: warning: implicit declaration of function ‘flash’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_nocbreak’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1540: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1540: warning: implicit declaration of function ‘nocbreak’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_noecho’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1541: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1541: warning: implicit declaration of function ‘noecho’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_nonl’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1542: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1542: warning: implicit declaration of function ‘nonl’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_noraw’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1543: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1543: warning: implicit declaration of function ‘noraw’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_reset_prog_mode’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1544: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1544: warning: implicit declaration of function ‘reset_prog_mode’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_reset_shell_mode’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1545: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1545: warning: implicit declaration of function ‘reset_shell_mode’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_resetty’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1546: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1546: warning: implicit declaration of function ‘resetty’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_savetty’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1547: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1547: warning: implicit declaration of function ‘savetty’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_cbreak’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1549: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1549: warning: implicit declaration of function ‘cbreak’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_echo’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1550: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1550: warning: implicit declaration of function ‘echo’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_nl’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1551: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1551: warning: implicit declaration of function ‘nl’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_raw’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1552: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1552: warning: implicit declaration of function ‘raw’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_baudrate’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1554: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1554: warning: implicit declaration of function ‘baudrate’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_termattrs’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1555: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1555: warning: implicit declaration of function ‘termattrs’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_termname’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1557: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1557: warning: implicit declaration of function ‘termname’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1557: warning: passing argument 1 of ‘PyString_FromString’ makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_longname’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1558: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1558: warning: implicit declaration of function ‘longname’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1558: warning: passing argument 1 of ‘PyString_FromString’ makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_can_change_color’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1560: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1560: warning: implicit declaration of function ‘can_change_color’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1560: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1560: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_has_colors’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1561: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1561: warning: implicit declaration of function ‘has_colors’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1561: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1561: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_has_ic’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1562: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1562: warning: implicit declaration of function ‘has_ic’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1562: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1562: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_has_il’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1563: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1563: warning: implicit declaration of function ‘has_il’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1563: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1563: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_isendwin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1564: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1564: warning: implicit declaration of function ‘isendwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1564: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1564: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_filter’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1565: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1565: warning: implicit declaration of function ‘filter’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_flushinp’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1566: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1566: warning: implicit declaration of function ‘flushinp’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_noqiflush’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1567: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1567: warning: implicit declaration of function ‘noqiflush’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Color_Content’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1574: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1585: warning: implicit declaration of function ‘color_content’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1585: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_color_pair’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1599: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Curs_Set’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1615: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1624: warning: implicit declaration of function ‘curs_set’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1625: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Delay_Output’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1635: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1643: warning: implicit declaration of function ‘delay_output’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_EraseChar’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1651: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1655: warning: implicit declaration of function ‘erasechar’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_getsyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1665: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1669: warning: implicit declaration of function ‘getsyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_GetWin’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1714: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1714: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1717: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1726: warning: implicit declaration of function ‘getwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1733: warning: return makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_HalfDelay’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1741: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1752: warning: implicit declaration of function ‘halfdelay’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_has_key’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1761: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1765: warning: implicit declaration of function ‘has_key’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1766: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1769: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Init_Color’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1779: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1791: warning: implicit declaration of function ‘init_color’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Init_Pair’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1799: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1809: warning: implicit declaration of function ‘init_pair’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_InitScr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1817: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1817: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1822: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1823: error: ‘stdscr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1827: warning: implicit declaration of function ‘initscr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1842: error: ‘ACS_ULCORNER’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1843: error: ‘ACS_LLCORNER’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1844: error: ‘ACS_URCORNER’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1845: error: ‘ACS_LRCORNER’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1846: error: ‘ACS_LTEE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1847: error: ‘ACS_RTEE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1848: error: ‘ACS_BTEE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1849: error: ‘ACS_TTEE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1850: error: ‘ACS_HLINE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1851: error: ‘ACS_VLINE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1852: error: ‘ACS_PLUS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1858: error: ‘ACS_S1’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1859: error: ‘ACS_S9’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1860: error: ‘ACS_DIAMOND’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1861: error: ‘ACS_CKBOARD’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1862: error: ‘ACS_DEGREE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1863: error: ‘ACS_PLMINUS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1864: error: ‘ACS_BULLET’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1865: error: ‘ACS_LARROW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1866: error: ‘ACS_RARROW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1867: error: ‘ACS_DARROW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1868: error: ‘ACS_UARROW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1869: error: ‘ACS_BOARD’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1870: error: ‘ACS_LANTERN’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1871: error: ‘ACS_BLOCK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1908: error: ‘LINES’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1911: error: ‘COLS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_setupterm’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1951: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1964: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_IntrFlush’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1975: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1986: warning: implicit declaration of function ‘intrflush’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_KeyName’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:1996: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2000: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_KillChar’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2013: warning: implicit declaration of function ‘killchar’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Meta’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2023: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2034: warning: implicit declaration of function ‘meta’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2034: error: ‘stdscr’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Napms’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2068: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2071: warning: implicit declaration of function ‘napms’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_NewPad’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2078: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2078: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2081: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2085: warning: implicit declaration of function ‘newpad’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_NewWindow’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2098: error: ‘WINDOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2098: error: ‘win’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2101: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2118: warning: implicit declaration of function ‘newwin’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Pair_Content’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2132: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2144: warning: implicit declaration of function ‘pair_content’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_pair_number’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2158: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2171: error: ‘A_COLOR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Putp’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2180: warning: implicit declaration of function ‘putp’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_QiFlush’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2188: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2192: warning: implicit declaration of function ‘qiflush’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_setsyx’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2212: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2221: warning: implicit declaration of function ‘setsyx’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Start_Color’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2233: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2237: warning: implicit declaration of function ‘start_color’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2238: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2240: error: ‘COLORS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2243: error: ‘COLOR_PAIRS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_tigetflag’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2259: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2264: warning: implicit declaration of function ‘tigetflag’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_tigetnum’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2272: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2277: warning: implicit declaration of function ‘tigetnum’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_tigetstr’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2285: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2290: warning: implicit declaration of function ‘tigetstr’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2290: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_tparm’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2305: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2324: warning: implicit declaration of function ‘tparm’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2324: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2327: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2330: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2333: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2336: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2339: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2342: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2345: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2348: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2351: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_TypeAhead’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2363: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2367: warning: implicit declaration of function ‘typeahead’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_UnCtrl’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2376: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2376: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2378: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2383: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2383: error: expected ‘;’ before ‘PyInt_AsLong’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2391: warning: implicit declaration of function ‘unctrl’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2391: warning: passing argument 1 of ‘PyString_FromString’ makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_UngetCh’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2398: error: ‘chtype’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2398: error: expected ‘;’ before ‘ch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2400: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2405: error: ‘ch’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2405: error: expected ‘;’ before ‘PyInt_AsLong’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2413: warning: implicit declaration of function ‘ungetch’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘PyCurses_Use_Env’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2421: error: ‘TRUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2432: warning: implicit declaration of function ‘use_env’
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c: In function ‘init_curses’:
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2559: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2560: error: ‘OK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2564: error: ‘A_ATTRIBUTES’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2565: error: ‘A_NORMAL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2566: error: ‘A_STANDOUT’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2567: error: ‘A_UNDERLINE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2568: error: ‘A_REVERSE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2569: error: ‘A_BLINK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2570: error: ‘A_DIM’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2571: error: ‘A_BOLD’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2572: error: ‘A_ALTCHARSET’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2574: error: ‘A_INVIS’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2576: error: ‘A_PROTECT’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2577: error: ‘A_CHARTEXT’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2578: error: ‘A_COLOR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2600: error: ‘COLOR_BLACK’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2601: error: ‘COLOR_RED’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2602: error: ‘COLOR_GREEN’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2603: error: ‘COLOR_YELLOW’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2604: error: ‘COLOR_BLUE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2605: error: ‘COLOR_MAGENTA’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2606: error: ‘COLOR_CYAN’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2607: error: ‘COLOR_WHITE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2648: error: ‘KEY_MIN’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_cursesmodule.c:2648: error: ‘KEY_MAX’ undeclared (first use in this function)
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -DUSE_DL_IMPORT -I. -I/home/Administrator/Python-2.2.2/./Include -I/usr/local/include -I/home/Administrator/Python-2.2.2/Include -I/home/Administrator/Python-2.2.2 -c /home/Administrator/Python-2.2.2/Modules/_cursesmodule.c -o build/temp.cygwin-1.7.9-i686-2.2/_cursesmodule.o
+WARNING: building of extension "_curses" failed: command 'gcc' failed with exit status 1
+building '_curses_panel' extension
+In file included from /home/Administrator/Python-2.2.2/Modules/_curses_panel.c:15:
+/home/Administrator/Python-2.2.2/./Include/py_curses.h:8:20: error: curses.h: No such file or directory
+In file included from /home/Administrator/Python-2.2.2/Modules/_curses_panel.c:15:
+/home/Administrator/Python-2.2.2/./Include/py_curses.h:36: error: expected specifier-qualifier-list before ‘WINDOW’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:17:19: error: panel.h: No such file or directory
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesCheckERR’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:32: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:32: error: (Each undeclared identifier is reported only once
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:32: error: for each function it appears in.)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: At top level:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:53: error: expected specifier-qualifier-list before ‘PANEL’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:128: error: expected ‘)’ before ‘*’ token
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_bottom_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:164: warning: implicit declaration of function ‘bottom_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:164: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_hide_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:165: warning: implicit declaration of function ‘hide_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:165: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_show_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:166: warning: implicit declaration of function ‘show_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:166: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_top_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:167: warning: implicit declaration of function ‘top_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:167: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_panel_hidden’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:168: warning: implicit declaration of function ‘panel_hidden’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:168: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:168: error: ‘FALSE’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:168: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:168: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_move_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:169: warning: implicit declaration of function ‘move_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:169: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: At top level:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:174: error: expected ‘)’ before ‘*’ token
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_Dealloc’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:193: warning: implicit declaration of function ‘del_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:193: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:194: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:194: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:194: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_above’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:204: error: ‘PANEL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:204: error: ‘pan’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:209: warning: implicit declaration of function ‘panel_above’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:209: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:216: warning: implicit declaration of function ‘find_po’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:216: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_below’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:231: error: ‘PANEL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:231: error: ‘pan’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:236: warning: implicit declaration of function ‘panel_below’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:236: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:243: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_window’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:258: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:259: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_replace_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:277: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:277: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:284: warning: implicit declaration of function ‘replace_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:284: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:284: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:285: error: ‘ERR’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:289: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:289: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:289: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:290: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:291: error: ‘PyCursesPanelObject’ has no member named ‘wo’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_set_panel_userptr’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:307: warning: implicit declaration of function ‘set_panel_userptr’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:307: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCursesPanel_userptr’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:318: warning: implicit declaration of function ‘panel_userptr’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:318: error: ‘PyCursesPanelObject’ has no member named ‘pan’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCurses_bottom_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:378: error: ‘PANEL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:378: error: ‘pan’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:392: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCurses_new_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:406: error: ‘PANEL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:406: error: ‘pan’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:410: warning: implicit declaration of function ‘new_panel’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:410: error: ‘PyCursesWindowObject’ has no member named ‘win’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:415: warning: implicit declaration of function ‘PyCursesPanel_New’
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCurses_top_panel’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:426: error: ‘PANEL’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:426: error: ‘pan’ undeclared (first use in this function)
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:440: warning: assignment makes pointer from integer without a cast
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c: In function ‘PyCurses_update_panels’:
+/home/Administrator/Python-2.2.2/Modules/_curses_panel.c:454: warning: implicit declaration of function ‘update_panels’
+gcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -DUSE_DL_IMPORT -I. -I/home/Administrator/Python-2.2.2/./Include -I/usr/local/include -I/home/Administrator/Python-2.2.2/Include -I/home/Administrator/Python-2.2.2 -c /home/Administrator/Python-2.2.2/Modules/_curses_panel.c -o build/temp.cygwin-1.7.9-i686-2.2/_curses_panel.o
+WARNING: building of extension "_curses_panel" failed: command 'gcc' failed with exit status 1
+skipping 'zlib' extension (up-to-date)
+skipping 'pyexpat' extension (up-to-date)
+running build_scripts
+not copying /home/Administrator/Python-2.2.2/Tools/scripts/pydoc (up-to-date)

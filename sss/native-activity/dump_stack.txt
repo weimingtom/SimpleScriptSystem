@@ -1,0 +1,25 @@
+********** Crash dump: **********
+Build fingerprint: 'generic/sdk/generic:2.3.3/GRI34/101070:eng/test-keys'
+pid: 455, tid: 463  >>> com.example.native_activity <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000020
+Stack frame #00  pc 00011094  /system/lib/egl/libGLES_android.so
+Stack frame #01  pc 00011c90  /system/lib/egl/libGLES_android.so
+Stack frame #02  pc 00003844  /system/lib/libEGL.so
+Stack frame #03  pc 0000198a  /data/data/com.example.native_activity/lib/libnative-activity.so: Unable to locate routine information for address 198a in module obj/local/armeabi/libnative-activity.so
+Stack frame #04  pc 00001a7a  /data/data/com.example.native_activity/lib/libnative-activity.so: Unable to locate routine information for address 1a7a in module obj/local/armeabi/libnative-activity.so
+Stack frame #05  pc 00001fda  /data/data/com.example.native_activity/lib/libnative-activity.so: Unable to locate routine information for address 1fda in module obj/local/armeabi/libnative-activity.so
+Stack frame #06  pc 00011a7c  /system/lib/libc.so
+Stack frame #07  pc 00011640  /system/lib/libc.so
+Crash dump is completed
+
+********** Crash dump: **********
+Build fingerprint: 'generic/sdk/generic:2.3.3/GRI34/101070:en
+pid: 505, tid: 513  >>> com.example.native_activity <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000020
+Stack frame #00  pc 00011094  /system/lib/egl/libGLES_android.so
+Stack frame #01  pc 00011c90  /system/lib/egl/libGLES_android.so
+Stack frame #02  pc 00003844  /system/lib/libEGL.so
+Stack frame #03  pc 00012fa0  /data/data/com.example.native_activity/lib/libnative-activity.so: Routine engine_draw_frame in D:/ugame_c/SimpleScriptSystem/sss/native-activity/jni/../../src/mainframe_ana.c:227
+Stack frame #04  pc 0001337e  /data/data/com.example.native_activity/lib/libnative-activity.so: Routine android_app_entry in C:/cygwin/home/Administrator/android-ndk-r5b/sources/android/native_app_glue/android_native_app_glue.c:169
+Stack frame #05  pc 00011a7c  /system/lib/libc.so
+Stack frame #06  pc 00011640  /system/lib/libc.so

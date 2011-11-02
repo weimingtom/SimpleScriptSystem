@@ -199,6 +199,9 @@ static void startup(void)
 #if USE_DFB
 		"width = 640\n"
 		"height = 480\n"
+#elif USE_ANA
+		"width = 800\n"
+		"height = 480\n"	
 #else
 		"width = 800\n"
 		"height = 600\n"

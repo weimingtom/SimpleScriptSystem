@@ -1,0 +1,91 @@
+E/Surface (  455): error locking buffer 1 (No such device)
+E/Surface (  455): surface (identity=36) is invalid, err=-19 (No such device)
+E/Surface (  455): surface (identity=36) is invalid, err=-19 (No such device)
+I/DEBUG   (   30): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   30): Build fingerprint: 'generic/sdk/generic:2.3.3/GRI34/101070:eng/test-keys'
+I/DEBUG   (   30): pid: 455, tid: 463  >>> com.example.native_activity <<<
+I/DEBUG   (   30): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000020
+I/DEBUG   (   30):  r0 00000000  r1 43faad90  r2 ac411085  r3 00000001
+I/DEBUG   (   30):  r4 00295df8  r5 0029ca60  r6 00000001  r7 3f30a3d1
+I/DEBUG   (   30):  r8 80402724  r9 43faaeb0  10 43faaeb4  fp 00000001
+I/DEBUG   (   30):  ip 43faaf00  sp 43faad90  lr ac411c93  pc ac411094  cpsr 00000030
+I/DEBUG   (   30):          #00  pc 00011094  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30):          #01  pc 00011c90  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30):          #02  pc 00003844  /system/lib/libEGL.so
+I/DEBUG   (   30):          #03  pc 0000198a  /data/data/com.example.native_activity/lib/libnative-activity.so
+I/DEBUG   (   30):          #04  pc 00001a7a  /data/data/com.example.native_activity/lib/libnative-activity.so
+I/DEBUG   (   30):          #05  pc 00001fda  /data/data/com.example.native_activity/lib/libnative-activity.so
+I/DEBUG   (   30):          #06  pc 00011a7c  /system/lib/libc.so
+I/DEBUG   (   30):          #07  pc 00011640  /system/lib/libc.so
+I/DEBUG   (   30):
+I/DEBUG   (   30): code around pc:
+I/DEBUG   (   30): ac411074 6603185b 664418a4 658165c2 bd102001
+I/DEBUG   (   30): ac411084 b089b530 20201c04 6ba09000 46691c0d
+I/DEBUG   (   30): ac411094 93016a03 92026a42 6d226a83 6ac39303
+I/DEBUG   (   30): ac4110a4 1c289204 69ea750b 1c284790 6a6230fc
+I/DEBUG   (   30): ac4110b4 429a6903 1c21d004 6a6c3114 47a01c28
+I/DEBUG   (   30):
+I/DEBUG   (   30): code around lr:
+I/DEBUG   (   30): ac411c70 d0032b01 f7ff480d e014fdc9 6b416820
+I/DEBUG   (   30): ac411c80 47881c20 29006921 6820d00c 1c2068c2
+I/DEBUG   (   30): ac411c90 69214790 58ca4b06 42a068d0 6803d102
+I/threaded_app(  455): NativeWindowDestroyed: 0x2964b8 -- 0x29ae18
+I/DEBUG   (   30): ac411ca0 47a0691c bd102001 0000300d 00003008
+I/DEBUG   (   30): ac411cb0 0000048c b083b5f0 1c161c0d 28011c1f
+I/DEBUG   (   30):
+I/DEBUG   (   30): stack:
+I/DEBUG   (   30):     43faad50  00295df8  [heap]
+I/DEBUG   (   30):     43faad54  ab91b6f1  /system/lib/libui.so
+I/DEBUG   (   30):     43faad58  00000001
+I/DEBUG   (   30):     43faad5c  ac4119a5  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30):     43faad60  ffffffff
+I/DEBUG   (   30):     43faad64  00000001
+I/DEBUG   (   30):     43faad68  00000018
+I/DEBUG   (   30):     43faad6c  ac915e45  /system/lib/libpixelflinger.so
+I/DEBUG   (   30):     43faad70  00000000
+I/DEBUG   (   30):     43faad74  00000004
+I/DEBUG   (   30):     43faad78  00000000
+I/DEBUG   (   30):     43faad7c  afd10f08  /system/lib/libc.so
+I/DEBUG   (   30):     43faad80  00000001
+I/DEBUG   (   30):     43faad84  00098408  [heap]
+I/DEBUG   (   30):     43faad88  df002777
+I/DEBUG   (   30):     43faad8c  e3a070ad
+I/DEBUG   (   30): #00 43faad90  00000020
+I/DEBUG   (   30):     43faad94  43faaeb0
+I/DEBUG   (   30):     43faad98  43faaeb4
+I/DEBUG   (   30):     43faad9c  abe02c5b  /system/lib/libEGL.so
+I/DEBUG   (   30):     43faada0  000001e0
+I/DEBUG   (   30):     43faada4  00098408  [heap]
+I/DEBUG   (   30):     43faada8  ac91529d  /system/lib/libpixelflinger.so
+I/DEBUG   (   30):     43faadac  43faadcc
+I/DEBUG   (   30):     43faadb0  00295df8  [heap]
+I/DEBUG   (   30):     43faadb4  00295df8  [heap]
+I/DEBUG   (   30):     43faadb8  abe08cc8  /system/lib/libEGL.so
+I/DEBUG   (   30):     43faadbc  ac411c93  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30): #01 43faadc0  00098408  [heap]
+I/DEBUG   (   30):     43faadc4  abe03847  /system/lib/libEGL.so
+
+
+I/DEBUG   (   30): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   30): Build fingerprint: 'generic/sdk/generic:2.3.3/GRI34/101070:en
+g/test-keys'
+I/DEBUG   (   30): pid: 505, tid: 513  >>> com.example.native_activity <<<
+I/DEBUG   (   30): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000020
+I/DEBUG   (   30):  r0 00000000  r1 43faad90  r2 ac411085  r3 00000001
+I/DEBUG   (   30):  r4 0029e4e0  r5 002a49c0  r6 00000001  r7 43faae74
+I/DEBUG   (   30):  r8 00299200  r9 80490160  10 804901e0  fp 000a64ea
+I/DEBUG   (   30):  ip 43faaf00  sp 43faad90  lr ac411c93  pc ac411094  cpsr 00000030
+I/DEBUG   (   30):          #00  pc 00011094  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30):          #01  pc 00011c90  /system/lib/egl/libGLES_android.so
+I/DEBUG   (   30):          #02  pc 00003844  /system/lib/libEGL.so
+I/DEBUG   (   30):          #03  pc 00012fa0  /data/data/com.example.native_activity/lib/libnative-activity.so
+I/DEBUG   (   30):          #04  pc 0001337e  /data/data/com.example.native_activity/lib/libnative-activity.so
+I/DEBUG   (   30):          #05  pc 00011a7c  /system/lib/libc.so
+I/DEBUG   (   30):          #06  pc 00011640  /system/lib/libc.so
+I/DEBUG   (   30):
+I/DEBUG   (   30): code around pc:
+I/DEBUG   (   30): ac411074 6603185b 664418a4 658165c2 bd102001
+I/DEBUG   (   30): ac411084 b089b530 20201c04 6ba09000 46691c0d
+I/DEBUG   (   30): ac411094 93016a03 92026a42 6d226a83 6ac39303
+I/DEBUG   (   30): ac4110a4 1c289204 69ea750b 1c284790 6a6230fc
+I/DEBUG   (   30): ac4110b4 429a6903 1c21d004 6a6c3114 47a01c28

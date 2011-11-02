@@ -76,6 +76,8 @@ python 2.2.2 on win32 has memory leak
 #define USE_WGL 0 
 /* DirectFB on Linux */
 #define USE_DFB 0
+/* Android native activity */
+#define USE_ANA 0
 
 #if USE_GDI || USE_WGL
 #define SSS_CLASS "SimpleScriptSystem"
@@ -99,4 +101,10 @@ python 2.2.2 on win32 has memory leak
         DirectFBErrorFatal( #x, err ); \
       } \
   }
+#endif
+
+#if USE_ANA
+#include <android/log.h>
+#define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", __VA_ARGS__))
+#define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", __VA_ARGS__))
 #endif
