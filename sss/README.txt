@@ -5,6 +5,7 @@ I. Build & run platform
 * GCC 4.4.3 on Ubuntu 10.04 (Linux ubuntu 2.6.32-21-generic)
 * QEMU for Windows, Linux (linux 2.6.39.2)
 * Android emulator for windows, Android native activity (Android 2.3.3 API Level 10) (WARNING: for test)
+* OpenGL ES emulator for windows (Microsoft Windows XP [version 5.1.2600])
 
 --------------------------
 II. How to build
@@ -43,6 +44,7 @@ II. How to build
 * Build Simple Script System
 1) VC6
 	Open SimpleScriptSystem.dsw.
+	(if need to build WGLES port, please switch to SimpleScriptSystemES.dsp)
 2) MinGW
 	$ make -f Makefile.mingw clean
 	$ make -f Makefile.mingw
@@ -66,7 +68,7 @@ III. Build Configure
 	USE_SDL : use SDL (Windows / Ubuntu)
 	USE_WGL : use OpenGL (Windows)
 	USE_DFB : use DirectFB (QEMU on Windows / Ubuntu)
-
+	USE_WGLES : use OpenGL ES emulator (Windows)
 --------------------------
 IV. Android native activity build
 1) Modify config.h
