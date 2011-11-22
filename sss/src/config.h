@@ -78,10 +78,22 @@ python 2.2.2 on win32 has memory leak
 #define USE_DFB 0
 /* Android native activity */
 #define USE_ANA 0
+/* OpenGL ES on Windows */
+#define USE_WGLES 0
 
-#if USE_GDI || USE_WGL
-#define SSS_CLASS "SimpleScriptSystem"
+#if USE_GDI
+#define SSS_CLASS "SimpleScriptSystem_GDI"
 #define SSS_TITLE SSS_APPNAME " GDI " SSS_VERSION
+#endif
+
+#if USE_WGL
+#define SSS_CLASS "SimpleScriptSystem_WGL"
+#define SSS_TITLE SSS_APPNAME " WGL " SSS_VERSION
+#endif
+
+#if USE_WGLES
+#define SSS_CLASS "SimpleScriptSystem_WGLES"
+#define SSS_TITLE SSS_APPNAME " WGLES " SSS_VERSION
 #endif
 
 #if USE_SDL

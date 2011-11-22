@@ -1,0 +1,79 @@
+[trace]
+-SSS.trace(str)
++Output debug info for debugging
+Output debug info for debugging
+
+[getMsg]
+-if SSS.getMsg() then ...
++Windows get message loop
+Windows get message loop
+
+[moveTo]
+-SSS.moveTo(x, y)
++Move to Point
+Move to Point
+
+[lineTo]
+-SSS.lineTo(x, y)
++Line to point
+Line to point
+
+[setColor]
+-SSS.setColor(#rrggbb)
++Set forground color
+Set forground color
+
+[refresh]
+-SSS.refresh()
++Refresh screen
+Refresh screen
+
+[setPixel]
+-SSS.setPixel(x, y, #rrggbb)
++Set pixel's color
+Set pixel's color
+
+[getPixel]
+-#rrggbb SSS.getPixel(x, y)
++Get pixel's color
+Get pixel's color
+
+[drawLine]
+-SSS.drawLine(x1, y1, x2, y2)
++Draw a line
+Draw a line
+
+[resize]
+-SSS.resize(width, height)
++Resize window
+Resize window
+
+[getMouseStatus]
+-status = SSS.getMouseStatus()
++Get mouse status
+Get mouse status
+
+[getKeyboardStatus]
+-status = SSS.getKeyboardStatus()
++Get keyboard status
+Get keyboard status
+
+[setTitle]
+-SSS.setTitle(str)
++Set window's title
+Set window's title
+
+[lock]
+-SSS.lock()
++lock screen
+lock screen
+
+[unlock]
+-SSS.unlock()
++unlock screen
+unlock screen
+
+[rgb]
+-#rrggbb = SSS.rgb(r, g, b)
++from rgb to int
+from rgb to int
