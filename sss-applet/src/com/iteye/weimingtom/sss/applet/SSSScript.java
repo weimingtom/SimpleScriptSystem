@@ -5,33 +5,34 @@ import org.python.core.*;
 
 public class SSSScript {
     private static String script = 
-	"width = 800\n" +
-	"height = 600\n" +
-	"SSS.resize(width, height)\n" +
-	"while 1:\n" +
-	"	if SSS.getMsg():\n" +
-	"		break\n" +
-	"	SSS.lock()\n" +
-	"	SSS.setColor(SSS.rgb(0xff, 0, 0))\n" +
-	"	SSS.moveTo(0, 0)\n" +
-	"	SSS.lineTo(width * 2, height * 2)\n" +
-	"	for k in range(height / 4, height / 2):" +
-	"		SSS.setPixel(width / 2, k, SSS.rgb(0xff, 0, 0xff))\n" +
-	"	i = SSS.getPixel(width / 4, height / 2)\n" +
-	"	SSS.drawLine(-width, height * 2, width * 2, -height, SSS.rgb(0, 0, 0xff))\n" +
-	"	SSS.unlock()\n" +
-	"	ms = SSS.getMouseStatus()\n" +
-	"	if ms != 0:\n" +
-	"		SSS.trace(\"mouse status : %d\" % ms)\n" +
-	"		SSS.setTitle(\"mouse status : %d\" % ms)\n" +
-	"	ks = SSS.getKeyboardStatus()\n" +
-	"	if ks != 0:\n" +
-	"		SSS.trace(\"keyboard status : %d\" % ks)\n" +
-	"		SSS.setTitle(\"keyboard status : %d\" % ks)\n" +
-	"	SSS.refresh()\n" +
-	"";
+		"width = 800\n" +
+		"height = 600\n" +
+		"SSS.resize(width, height)\n" +
+		"while 1:\n" +
+		"	if SSS.getMsg():\n" +
+		"		break\n" +
+		"	SSS.lock()\n" +
+		"	SSS.setColor(SSS.rgb(0xff, 0, 0))\n" +
+		"	SSS.moveTo(0, 0)\n" +
+		"	SSS.lineTo(width * 2, height * 2)\n" +
+		"	for k in range(height / 4, height / 2):" +
+		"		SSS.setPixel(width / 2, k, SSS.rgb(0xff, 0, 0xff))\n" +
+		"	i = SSS.getPixel(width / 4, height / 2)\n" +
+		"	SSS.drawLine(-width, height * 2, width * 2, -height, SSS.rgb(0, 0, 0xff))\n" +
+		"	SSS.unlock()\n" +
+		"	ms = SSS.getMouseStatus()\n" +
+		"	if ms != 0:\n" +
+		"		SSS.trace(\"mouse status : %d\" % ms)\n" +
+		"		SSS.setTitle(\"mouse status : %d\" % ms)\n" +
+		"	ks = SSS.getKeyboardStatus()\n" +
+		"	if ks != 0:\n" +
+		"		SSS.trace(\"keyboard status : %d\" % ks)\n" +
+		"		SSS.setTitle(\"keyboard status : %d\" % ks)\n" +
+		"	SSS.refresh()\n" +
+		"";
     
     public static void ScriptRun() {
+    	System.setProperty("python.cachedir.skip", "true");
         PythonInterpreter interp = new PythonInterpreter();
         interp.exec("from " + 
         	SSS.class.getPackage().getName() + 
@@ -53,6 +54,7 @@ public class SSSScript {
      * @throws PyException
      */
     public static void main(String []args) throws PyException {
+    	System.setProperty("python.cachedir.skip", "true");
         PythonInterpreter interp = new PythonInterpreter();
 
         System.out.println("Hello, brave new world");
